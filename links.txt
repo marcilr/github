@@ -1,0 +1,40 @@
+links.txt
+Created Tue Nov 10 11:20:16 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+GitHub related links
+
+
+Links
+=====
+Adding an existing project to GitHub using the command line
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+Create repositories
+Repositories are where you'll work
+and collaborate on projects
+https://help.github.com/create-a-repo
+
+Create a new repository
+This links to creating a new marcilr repo.
+https://github.com/new
+
+Fork repositories
+Forking creates a new, unique project from an existing one.
+https://help.github.com/fork-a-repo
+
+GitHub
+https://github.com/
+
+GitHub security and SSH keys
+https://circleci.com/docs/github-security-ssh-keys
+
+Set up Git
+A quick guide to help you get started with Git.
+https://help.github.com/set-up-git-redirect
+
+Work togethor
+Send pull requests, follow friends.
+Star and watch projects.
+https://help.github.com/be-social
