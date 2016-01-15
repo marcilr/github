@@ -24,6 +24,12 @@ Fork repositories
 Forking creates a new, unique project from an existing one.
 https://help.github.com/fork-a-repo
 
+Git Basics - Working with Remotes
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+Git Branching
+https://git-scm.com/book/en/v1/Git-Branching
+
 GitHub
 https://github.com/
 
