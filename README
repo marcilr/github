@@ -1,0 +1,39 @@
+README
+Created Tue Nov 10 11:24:45 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+clone.txt
+  Clone - To grab a complete copy of another user's repository,
+  use git clone like this:
+  $ git clone https://github.com/USERNAME/REPOSITORY.git
+  # Clones a repository to your computer
+
+create.txt
+  Create a new repository on the command line
+
+fetch.txt
+  Fetch - Use git fetch to retrieve new work done by other people.
+  You can grab all the new information by using git fetch
+  *remotename* in the terminal:
+  $ git fetch remotename
+  # Fetches updates made to a remote repository
+
+
+merge.txt
+Created Tue Nov 10 11:42:45 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+merge.txt
+  Merge - Merging combines your local changes with changes made by others.
+  Merge a remote-tracking branch with your local branch:
+  $ git merge remotename/branchname
+  # Merges updates made online with your local work
+
+push.txt
+  Push an existing repository from the command line
+
+syntax.txt
+  Syntax
