@@ -18,6 +18,11 @@ cache-password.txt
   git config --global credential.helper "cache --timeout=3600"
   http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github
 
+check-key-length.txt
+  Check key length:
+  $ ssh-keygen -l -f ~/.ssh/your_key.pub
+  https://news.ycombinator.com/item?id=9645703
+
 clone.txt
   Clone - To grab a complete copy of another user's repository,
   use git clone like this:
