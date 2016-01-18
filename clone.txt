@@ -8,8 +8,12 @@ Clone
 
 To grab a complete copy of another user's repository, use git clone like this:
 
-  $ git clone https://github.com/USERNAME/REPOSITORY.git
-  # Clones a repository to your computer
+
+Clone GitHub repo:
+$ https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+# Clones a repository to your computer
+
+NOTE: ".git" at the end of YOUR-REPOSITORY name is optional.
 
 
 When you run git clone, the following actions occur:
@@ -28,6 +32,30 @@ usually abbreviate such remote-tracking branch names to origin/foo.
 
 Example
 =======
+covellite:~/git$ git clone https://github.com/marcilr/dev
+Cloning into 'dev'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+covellite:~/git$ 
+
+
+Example
+=======
+covellite:~/git$ git clone https://github.com/marcilr/git-github github
+Cloning into 'github'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+covellite:~/git$
+
+-- help.github.com/articles/cloning-a-repository/
+
+
+Example
+=======
 covellite:~/tmp$ git clone https://github.com/marcilr/git.git
 Cloning into 'git'...
 warning: You appear to have cloned an empty repository.
@@ -37,9 +65,16 @@ covellite:~/tmp$
 
 Links
 =====
+Cloning a repository
+https://help.github.com/articles/cloning-a-repository/
+
 Fetching a remote
 > git clone
 > git fetch
 > git merge
 > git pull
 https://help.github.com/articles/fetching-a-remote/
+
+Importing a Git repository using the command line
+https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
+
