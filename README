@@ -21,6 +21,8 @@ fetch.txt
   $ git fetch remotename
   # Fetches updates made to a remote repository
 
+links.txt
+  Syntax related links
 
 merge.txt
 Created Tue Nov 10 11:42:45 AKST 2015
