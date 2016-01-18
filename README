@@ -39,6 +39,9 @@ fetch.txt
   $ git fetch remotename
   # Fetches updates made to a remote repository
 
+generating-ssh-keys.txt
+  Generating SSH keys
+
 links.txt
   Syntax related links
 
