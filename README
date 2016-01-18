@@ -25,10 +25,6 @@ links.txt
   Syntax related links
 
 merge.txt
-Created Tue Nov 10 11:42:45 AKST 2015
-Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
-
-merge.txt
   Merge - Merging combines your local changes with changes made by others.
   Merge a remote-tracking branch with your local branch:
   $ git merge remotename/branchname
