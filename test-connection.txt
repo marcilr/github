@@ -1,0 +1,32 @@
+test-connection.txt
+Created Wed Sep 23 10:59:20 AKDT 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Test Connection
+
+
+To make sure everything is working, you'll now try to SSH into GitHub.
+When you do this, you will be asked to authenticate this action using
+your password, which is the SSH key passphrase you created earlier.
+
+1 - Open Terminal and enter:
+  $ ssh -T git@github.com
+  # Attempts to ssh to GitHub
+
+Options:
+  -T      Disable pseudo-tty allocation.
+  -v      Verbose mode.  Causes ssh to print debugging messages about its
+          progress.  This is helpful in debugging connection, authentication,
+          and configuration problems.  Multiple -v options increase the
+          verbosity.  The maximum is 3.
+
+help.github.com/articles/generating-ssh-keys/
+
+
+Links
+=====
+Generating SSH keys
+GitHub Help
+https://help.github.com/articles/generating-ssh-keys/
+
