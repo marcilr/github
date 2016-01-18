@@ -1,0 +1,10 @@
+README
+Created Mon Jan 18 10:32:03 AKST 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+create.txt
+  Create new repository on github via cli
+  https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
