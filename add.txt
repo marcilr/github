@@ -1,0 +1,64 @@
+add.txt
+Created Tue Nov 10 13:04:57 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Adding a remote
+
+
+To add a new remote, use the git remote add command on the terminal, in the
+directory your repository is stored at.
+
+The git remote add command takes two arguments:
+
+> A remote name, for example, origin
+> A remote URL, for example, https://github.com/user/repo.git
+
+For example:
+  $ git remote add origin https://github.com/user/repo.git
+  # Set a new remote
+
+  $ git remote -v
+  # Verify new remote
+  # origin  https://github.com/user/repo.git (fetch)
+  # origin  https://github.com/user/repo.git (push)
+
+Not sure which URL to use? Check out "Which remote URL should I use?."[1]
+
+
+Troubleshooting
+===============
+You may encounter these errors when trying to add a remote.
+
+  Remote name already exists
+
+This error means you've tried to add a remote with a name that already exists
+in your local repository:
+
+  git remote add origin https://github.com/octocat/Spoon-Knife
+  # fatal: remote origin already exists.
+To fix this, you can
+
+> Use a different name for the new remote
+> Rename the existing remote[2]
+> Delete the existing remote[3]
+
+
+Further reading
+===============
+"Working with Remotes" from the Pro Git book[4]
+
+
+Links
+=====
+[1] "Which remote URL should I use?."
+https://help.github.com/articles/which-remote-url-should-i-use
+
+[2] Rename the existing remote
+https://help.github.com/articles/renaming-a-remote
+
+[3] Delete the existing remote
+https://help.github.com/articles/removing-a-remote
+
+[4] "Working with Remotes" from the Pro Git book
+http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
