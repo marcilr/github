@@ -30,6 +30,12 @@ merge.txt
   $ git merge remotename/branchname
   # Merges updates made online with your local work
 
+pull.txt
+  git pull is a convenient shortcut for completing both git fetch and git
+  mergein the same command:
+    $ git pull remotename branchname
+    # Grabs online updates and merges them with your local work
+
 push.txt
   Push an existing repository from the command line
 
