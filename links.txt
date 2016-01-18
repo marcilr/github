@@ -1,0 +1,30 @@
+links.txt
+Created Tue Nov 10 11:47:20 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Remote related links
+
+
+Links
+======
+Adding a remote
+https://help.github.com/articles/adding-a-remote/
+
+Delete the existing remote
+https://help.github.com/articles/removing-a-remote
+
+Git Basics - Working with Remotes
+http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+GitGuys: Adding and Removing Remote Branches
+http://www.gitguys.com/topics/adding-and-removing-remote-branches/
+
+Rename the existing remote
+https://help.github.com/articles/renaming-a-remote
+
+"Which remote URL should I use?."
+https://help.github.com/articles/which-remote-url-should-i-use
+
+"Working with Remotes" from the Pro Git book
+http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
