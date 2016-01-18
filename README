@@ -5,6 +5,19 @@ Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+cache-password.txt
+  Cache password for git
+
+  With git 1.7.9 or later, you can just use one of the following credential
+  helpers:
+
+  git config --global credential.helper cache
+  ... which tells git to keep your password cached in memory for (by default)
+  15 minutes. You can set a longer timeout with:
+
+  git config --global credential.helper "cache --timeout=3600"
+  http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github
+
 clone.txt
   Clone - To grab a complete copy of another user's repository,
   use git clone like this:
