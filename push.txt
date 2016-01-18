@@ -1,0 +1,18 @@
+push.txt
+Created Tue Nov 10 11:26:54 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Push an existing repository from the command line
+
+
+git remote add origin git@github.com:marcilr/git.git
+git push -u origin master
+
+--github.com/marcilr/git
+
+
+Links
+=====
+git repo
+https://github.com/marcilr/git
