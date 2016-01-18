@@ -39,5 +39,8 @@ pull.txt
 push.txt
   Push an existing repository from the command line
 
+ssh.txt
+  Generating SSH keys
+
 syntax.txt
   Syntax
