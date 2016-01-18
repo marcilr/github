@@ -5,8 +5,5 @@ Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
-add.txt
-  Adding a remote
-  Managing Remotes / Adding a remote
-  GitHub Help
-  https://help.github.com/articles/adding-a-remote/
+syntax/
+  Syntax for remotes
