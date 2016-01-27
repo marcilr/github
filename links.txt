@@ -11,6 +11,10 @@ Links
 Adding a remote
 https://help.github.com/articles/adding-a-remote
 
+Cloning the repo and working with Git
+MelvMay-GG edited this page on Mar 1, 2013 - 3 revisions
+https://github.com/GarageGames/Torque2D/wiki/Cloning-the-repo-and-working-with-Git
+
 Fetching a remote
 > git clone
 > git fetch
