@@ -14,6 +14,10 @@ add.txt
 links.txt
   Syntax related links 
 
+list-remotes.txt
+  List remotes
+  $ git remote -v
+
 TODO
   Items TODO
 
