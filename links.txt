@@ -11,14 +11,17 @@ Links
 Adding an existing project to GitHub using the command line
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
-Create repositories
-Repositories are where you'll work
-and collaborate on projects
-https://help.github.com/create-a-repo
+Create a Github Repo from the Command Line
+https://viget.com/extend/create-a-github-repo-from-the-command-line
 
 Create a new repository
 This links to creating a new marcilr repo.
 https://github.com/new
+
+Create repositories
+Repositories are where you'll work
+and collaborate on projects
+https://help.github.com/create-a-repo
 
 Fork repositories
 Forking creates a new, unique project from an existing one.
