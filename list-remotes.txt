@@ -1,0 +1,27 @@
+list-remotes.txt
+Created Tue Jan 26 15:26:17 AKST 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+List remotes
+
+To list all remotes use 'git remote -v'
+
+-- git-scm.com/
+
+
+
+Example
+=======
+covellite:~/git/github/remotes/syntax$ git remote -v
+origin  ssh://git@github.com/marcilr/git-github-remotes-syntax (fetch)
+origin  ssh://git@github.com/marcilr/git-github-remotes-syntax (push)
+covellite:~/git/github/remotes/syntax$
+
+
+
+Links
+=====
+Git Basics - Working with Remotes
+Git Pro book
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
