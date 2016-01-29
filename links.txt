@@ -40,6 +40,10 @@ All gists are Git repositories, so they are automatically versioned,
 forkable and usable from Git.
 https://gist.github.com/discover
 
+Importing a Git repository using the command line
+GitHub Help
+https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
+
 Resolving a merge conflict from the command line
 This guide demonstrates how to resolve some common conflicts via the command
 line. You will need a text editor to resolve some of the conflicts.
