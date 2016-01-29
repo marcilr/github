@@ -40,6 +40,13 @@ https://git-scm.com/book/en/v1/Git-Branching
 GitHub
 https://github.com/
 
+GitHub For Beginners: Don't Get Scared, Get Started
+http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
+
+GitHub For Beginners: Commit, Push And Go
+Lauren Orsini,  OCT 2, 2013
+http://readwrite.com/2013/10/02/github-for-beginners-part-2
+
 GitHub security and SSH keys
 https://circleci.com/docs/github-security-ssh-keys
 
