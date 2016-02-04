@@ -50,6 +50,10 @@ http://readwrite.com/2013/10/02/github-for-beginners-part-2
 GitHub security and SSH keys
 https://circleci.com/docs/github-security-ssh-keys
 
+Github Webhook
+Bind Github webhook events to Kanboard automatic actions.
+http://kanboard.net/plugin/github-webhook
+
 Set up Git
 A quick guide to help you get started with Git.
 https://help.github.com/set-up-git-redirect
