@@ -11,6 +11,9 @@ Links
 Adding a remote
 https://help.github.com/articles/adding-a-remote
 
+Adding an existing project to GitHub using the command line
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
 Cloning the repo and working with Git
 MelvMay-GG edited this page on Mar 1, 2013 - 3 revisions
 https://github.com/GarageGames/Torque2D/wiki/Cloning-the-repo-and-working-with-Git
