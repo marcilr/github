@@ -30,6 +30,25 @@ incorporate it into yours before you'll be allowed to push.
   -- git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
 
+Example
+=======
+Push go repo to github.
+
+1. Create git-dev-lang-go of github
+
+2. In home go repository at github repo as remote:
+$ git remote add origin git@github.com:marcilr/git-dev-lang-go.git
+
+3. List remotes:
+go$ git remote -v
+origin  git@github.com:marcilr/git-dev-lang-go.git (fetch)
+origin  git@github.com:marcilr/git-dev-lang-go.git (push)
+go$ 
+
+4. Push go repo to github:
+$ git push -u origin master
+
+
 Links
 =====
 Git Basics - Working with Remotes
