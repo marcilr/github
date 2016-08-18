@@ -54,6 +54,21 @@ Github Webhook
 Bind Github webhook events to Kanboard automatic actions.
 http://kanboard.net/plugin/github-webhook
 
+Repositories | GitHub Developer Guide
+i.    List your repositories
+ii.   List user repositories
+iii.  List organization repositories
+iv.   List all public repositories
+v.    Create
+vi.   Get
+vii.  Edit
+viii. List contributors
+ix.   List languages
+x.    List Teams
+xi.   List Tags
+xii.  Delete a Repository
+https://developer.github.com/v3/repos/
+
 Set up Git
 A quick guide to help you get started with Git.
 https://help.github.com/set-up-git-redirect
