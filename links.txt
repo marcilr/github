@@ -40,20 +40,12 @@ https://git-scm.com/book/en/v1/Git-Branching
 GitHub
 https://github.com/
 
-GitHub For Beginners: Don't Get Scared, Get Started
-http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
+GitHub API v3 - Overview
+All API access is over HTTPS, and accessed from the https://api.github.com.
+All data is sent and received as JSON.
+https://developer.github.com/v3/
 
-GitHub For Beginners: Commit, Push And Go
-Lauren Orsini,  OCT 2, 2013
-http://readwrite.com/2013/10/02/github-for-beginners-part-2
-
-GitHub security and SSH keys
-https://circleci.com/docs/github-security-ssh-keys
-
-Github Webhook
-Bind Github webhook events to Kanboard automatic actions.
-http://kanboard.net/plugin/github-webhook
-
+GitHub API v3 - Repositories
 Repositories | GitHub Developer Guide
 i.    List your repositories
 ii.   List user repositories
@@ -68,6 +60,20 @@ x.    List Teams
 xi.   List Tags
 xii.  Delete a Repository
 https://developer.github.com/v3/repos/
+
+GitHub For Beginners: Don't Get Scared, Get Started
+http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
+
+GitHub For Beginners: Commit, Push And Go
+Lauren Orsini,  OCT 2, 2013
+http://readwrite.com/2013/10/02/github-for-beginners-part-2
+
+GitHub security and SSH keys
+https://circleci.com/docs/github-security-ssh-keys
+
+Github Webhook
+Bind Github webhook events to Kanboard automatic actions.
+http://kanboard.net/plugin/github-webhook
 
 Set up Git
 A quick guide to help you get started with Git.
