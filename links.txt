@@ -32,6 +32,10 @@ Generating SSH keys
 GitHub Help
 https://help.github.com/articles/generating-ssh-keys/
 
+Getting Started
+Developer API
+https://developer.github.com/guides/getting-started/
+
 GitHub Bootcamp
 Has links to:
 o Set up Git
