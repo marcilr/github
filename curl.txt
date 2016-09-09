@@ -1,0 +1,109 @@
+curl.txt
+Created Fri Sep  9 14:13:31 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Put git token in ~/.githubconfig
+
+Cache git password:
+  covellite:~$ git config --global credential.helper cache
+
+
+get list of repositories using curl:
+
+$ curl -i https://api.github.com/users/marcilr/repos | grep "\"name\""
+  "name": ".repo",
+  "name": "bin",
+  "name": "books",
+  "name": "books-dev",
+  "name": "compsci",
+  "name": "dev",
+  "name": "dev-compilers",
+...
+    "name": "dev-lang-go-packages-ini",
+$
+
+This only lists 30 lines.
+
+
+Pagination
+==========
+Requests that return multiple items will be paginated to 30 items by default.
+You can specify further pages with the ?page parameter.  For some resources,
+you can also set a custom page size up to 100 with the ?per_page parameter.
+Note that for technical reasons not all endpoints respect the ?per_page parameter,
+see events[1] for example.
+
+  curl 'https://api.github.com/user/repos?page=2&per_page=100'
+
+Note that page numbering is 1-based and that omitting the ?page parameter will
+return the first page.
+
+For more information on pagination, check out our guide on Traversing with
+Pagination.[2]
+
+
+Pull 1st 100 repos:
+$ curl -i "https://api.github.com/users/marcilr/repos?page=1&per_page=100" | grep "\"name\"" | wc -l
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  543k  100  543k    0     0   169k      0  0:00:03  0:00:03 --:--:--  169k
+100
+$
+
+
+Query the go repos:
+$ curl -i "https://api.github.com/users/marcilr/repos?page=1&per_page=100" | grep "\"name\"" | grep go-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  543k  100  543k    0     0   180k      0  0:00:03  0:00:03 --:--:--  180k
+    "name": "dev-lang-go-00INSTALL",
+    "name": "dev-lang-go-arrays",
+    "name": "dev-lang-go-debug",
+    "name": "dev-lang-go-debug-godebug",
+    "name": "dev-lang-go-debug-src",
+    "name": "dev-lang-go-docs",
+    "name": "dev-lang-go-error-handling",
+    "name": "dev-lang-go-io",
+    "name": "dev-lang-go-mysql",
+    "name": "dev-lang-go-mysql-src",
+    "name": "dev-lang-go-packages",
+    "name": "dev-lang-go-packages-bufio",
+    "name": "dev-lang-go-packages-fmt",
+    "name": "dev-lang-go-packages-ini",
+    "name": "dev-lang-go-packages-log",
+    "name": "dev-lang-go-packages-os",
+    "name": "dev-lang-go-packages-regexp",
+    "name": "dev-lang-go-packages-sql",
+    "name": "dev-lang-go-packages-sql-docs",
+    "name": "dev-lang-go-packages-sql-go-sql-driver",
+    "name": "dev-lang-go-packages-sql-go-sql-driver-example1",
+    "name": "dev-lang-go-packages-sql-go-sql-driver-example2",
+    "name": "dev-lang-go-packages-strconv",
+    "name": "dev-lang-go-packages-strings",
+    "name": "dev-lang-go-packages-sub-repositories",
+    "name": "dev-lang-go-packages-sub-repositories-crypto",
+    "name": "dev-lang-go-packages-testing",
+    "name": "dev-lang-go-src",
+    "name": "dev-lang-go-strings",
+    "name": "dev-lang-go-syntax",
+    "name": "dev-lang-go-test",
+    "name": "dev-lang-go-tools",
+    "name": "dev-lang-go-types",
+    "name": "dev-lang-go-types-hash",
+$
+
+
+Links
+=====
+[1] events
+https://developer.github.com/v3/activity/events/
+
+[2] Traversing with Pagination
+https://developer.github.com/guides/traversing-with-pagination
+
+Pagination
+https://developer.github.com/v3/#pagination
+
+Traversing with Pagination
+https://developer.github.com/guides/traversing-with-pagination/
