@@ -32,6 +32,9 @@ clone.txt
 create.txt
   Create a new repository on the command line
 
+curl.txt
+  Query github via curl.
+
 fetch.txt
   Fetch - Use git fetch to retrieve new work done by other people.
   You can grab all the new information by using git fetch
@@ -41,6 +44,9 @@ fetch.txt
 
 generating-ssh-keys.txt
   Generating SSH keys
+
+github-from-cli.txt
+  Query github via cli
 
 links.txt
   Syntax related links
