@@ -48,6 +48,9 @@ generating-ssh-keys.txt
 github-from-cli.txt
   Query github via cli
 
+github-from-cli-INSTALL.txt
+  Installation of github from the CLI
+
 links.txt
   Syntax related links
 
