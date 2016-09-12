@@ -54,7 +54,19 @@ Importing a Git repository using the command line
 GitHub Help
 https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
 
+Linux: Install pip Client To Install Python Packages
+by VIVEK GITE on OCTOBER 28, 2012 last updated OCTOBER 28, 2012
+nixCraft
+Linux and Unix tutorials for new and seasoned sysadmin.
+http://www.cyberciti.biz/faq/debian-ubuntu-centos-rhel-linux-install-pipclient/
+
 Resolving a merge conflict from the command line
 This guide demonstrates how to resolve some common conflicts via the command
 line. You will need a text editor to resolve some of the conflicts.
 https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+
+Using github from the CLI
+git hub lets you use your github account from the command line.  Among other things,
+it lets you create and fork repositories, or file pull requests.
+http://pythonhosted.org/hub/
+
