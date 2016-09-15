@@ -1,0 +1,336 @@
+create.txt
+Created Wed Sep 23 10:22:51 AKDT 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Create new repository on github
+
+This definitely works:
+$ curl -u "$username:$token" https://api.github.com/user/repos -d '{"name":"'$repo_name'"}
+
+$ curl -u "marcilr:mygitpassword" https://api.github.com/user/repos -d '{"name":"'git'"}'
+{
+  "id": 43029232,
+  "name": "git",
+  "full_name": "marcilr/git",
+  "owner": {
+    "login": "marcilr",
+    "id": 12204051,
+    "avatar_url": "https://avatars.githubusercontent.com/u/12204051?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/marcilr",
+    "html_url": "https://github.com/marcilr",
+    "followers_url": "https://api.github.com/users/marcilr/followers",
+    "following_url": "https://api.github.com/users/marcilr/following{/other_user            }",
+    "gists_url": "https://api.github.com/users/marcilr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/marcilr/starred{/owner}{/repo}"            ,
+    "subscriptions_url": "https://api.github.com/users/marcilr/subscriptions",
+    "organizations_url": "https://api.github.com/users/marcilr/orgs",
+    "repos_url": "https://api.github.com/users/marcilr/repos",
+    "events_url": "https://api.github.com/users/marcilr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/marcilr/received_events            ",
+    "type": "User",
+    "site_admin": false
+  },
+  "private": false,
+  "html_url": "https://github.com/marcilr/git",
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/marcilr/git",
+"forks_url": "https://api.github.com/repos/marcilr/git/forks",
+  "keys_url": "https://api.github.com/repos/marcilr/git/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/marcilr/git/collaborators{/            collaborator}",
+  "teams_url": "https://api.github.com/repos/marcilr/git/teams",
+  "hooks_url": "https://api.github.com/repos/marcilr/git/hooks",
+  "issue_events_url": "https://api.github.com/repos/marcilr/git/issues/events{/n            umber}",
+  "events_url": "https://api.github.com/repos/marcilr/git/events",
+  "assignees_url": "https://api.github.com/repos/marcilr/git/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/marcilr/git/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/marcilr/git/tags",
+  "blobs_url": "https://api.github.com/repos/marcilr/git/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/marcilr/git/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/marcilr/git/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/marcilr/git/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/marcilr/git/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/marcilr/git/languages",
+  "stargazers_url": "https://api.github.com/repos/marcilr/git/stargazers",
+  "contributors_url": "https://api.github.com/repos/marcilr/git/contributors",
+  "subscribers_url": "https://api.github.com/repos/marcilr/git/subscribers",
+  "subscription_url": "https://api.github.com/repos/marcilr/git/subscription",
+  "commits_url": "https://api.github.com/repos/marcilr/git/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/marcilr/git/git/commits{/sha}            ",
+  "comments_url": "https://api.github.com/repos/marcilr/git/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/marcilr/git/issues/comments            {/number}",
+  "contents_url": "https://api.github.com/repos/marcilr/git/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/marcilr/git/compare/{base}...{hea            d}",
+  "merges_url": "https://api.github.com/repos/marcilr/git/merges",
+  "archive_url": "https://api.github.com/repos/marcilr/git/{archive_format}{/ref            }",
+  "downloads_url": "https://api.github.com/repos/marcilr/git/downloads",
+  "issues_url": "https://api.github.com/repos/marcilr/git/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/marcilr/git/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/marcilr/git/milestones{/number            }",
+ "notifications_url": "https://api.github.com/repos/marcilr/git/notifications{?            since,all,participating}",
+  "labels_url": "https://api.github.com/repos/marcilr/git/labels{/name}",
+  "releases_url": "https://api.github.com/repos/marcilr/git/releases{/id}",
+  "created_at": "2015-09-23T21:49:56Z",
+  "updated_at": "2015-09-23T21:49:56Z",
+  "pushed_at": "2015-09-23T21:49:56Z",
+  "git_url": "git://github.com/marcilr/git.git",
+  "ssh_url": "git@github.com:marcilr/git.git",
+  "clone_url": "https://github.com/marcilr/git.git",
+  "svn_url": "https://github.com/marcilr/git",
+  "homepage": null,
+  "size": 0,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": null,
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "open_issues_count": 0,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "permissions": {
+    "admin": true,
+    "push": true,
+    "pull": true
+  },
+  "network_count": 0,
+  "subscribers_count": 1
+}
+covellite:~$
+
+Create a Github Repo from the Command Line
+Has curl cli and bash function.
+viget.com/extend/create-a-github-repo-from-the-command-line
+
+
+To avoid errors, do not initialize the new repository with README, license,
+or gitignore files.  You can add these files after your project has been
+pushed to GitHub.
+
+1. Create and initialize a git/ directory for a repository of repositories:
+$ mkdir git
+$ cd git
+$ git init
+Initialized empty Git repository in /home/marcilr/git/.git/
+$
+
+2. Create README file:
+$ create README
+
+3. Add the files in your new local repository. This stages them for the first commit.
+$ git add .
+$ git commit -m 'README file with filelist'
+[master (root-commit) ebabdc1] README file with filelist
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README
+$
+
+4. Create new repo or remote on github:
+covellite:~/git$ git remote add origin https://github.com/marcilr/git
+# Sets the new remote
+
+marcilr@covellite:~/git$ git remote -v
+origin  https://github.com/marcilr/git (fetch)
+origin  https://github.com/marcilr/git (push)
+marcilr@covellite:~/git$
+# Verfies the new remote URL
+
+NOTE: Looks like you must be in a local repo for the above to work:
+covellite:~$ git remote add origin https://github.com/marcilr/git
+fatal: Not a git repository (or any of the parent directories): .git
+covellite:~$
+
+5. Push the changes in your local repository to GitHub.
+covellite:~/git$ git push origin master
+Username for 'https://github.com': marcilr
+Password for 'https://marcilr@github.com': the usual + 79
+remote: Repository not found.
+fatal: repository 'https://github.com/marcilr/git/' not found
+covellite:~/git$
+
+------------------------------------------------------
+
+
+Create remote
+=============
+covellite:~/git$ cd ..
+marcilr@covellite:~$ git remote
+fatal: Not a git repository (or any of the parent directories): .git
+covellite:~$
+
+covellite:~/git$ git remote
+origin
+covellite:~/git$
+
+covellite:~/git$ git remote add git https://github.home/marcilr/git
+covellite:~/git$ git remote -v
+marcilr@covellite:~/git$ git remote -v
+git     https://github.home/marcilr/git (fetch)
+git     https://github.home/marcilr/git (push)
+origin  https://github.com/marcilr/git (fetch)
+origin  https://github.com/marcilr/git (push)
+covellite:~/git$
+
+
+Push to remote
+==============
+covellite:~/git$ git push origin master
+Username for 'https://github.com': marcilr
+Password for 'https://marcilr@github.com': the usual + 79
+remote: Repository not found.
+fatal: repository 'https://github.com/marcilr/git/' not found
+covellite:~/git$
+
+
+Create foo on github
+====================
+covellite:~$ git remote add orgian https://gtihub.com/marcilr/foo.git
+fatal: Not a git repository (or any of the parent directories): .git
+covellite:~$ 
+
+
+Looks like you have to have a repository to create a github repository...
+
+
+$ ssh -T git@github.com
+Hi marcilr! You've successfully authenticated, but GitHub does not provide shell access.
+$
+
+
+$ mkdir foo
+$ cd foo/
+$ git init
+Initialized empty Git repository in /home/marcilr/foo/.git/
+$
+
+/foo$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+foo$
+
+foo$ create foobar.txt
+foo$ git add foobar.txt
+foo$ git commit -m "My foobar."
+[master (root-commit) 54ac568] My foobar.
+ 1 file changed, 3 insertions(+)
+ create mode 100644 foobar.txt
+foo$ 
+
+
+$ git remote add origin https://github.com/marcilr/foo.git
+foo$ git remote -v
+origin  https://github.com/marcilr/foo.git (fetch)
+origin  https://github.com/marcilr/foo.git (push)
+foo$
+
+foo$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+foo$ 
+
+foo$ git config --global push.default simple
+nothing...
+
+foo$ git push --set-upstream origin master
+Username for 'https://github.com': marcilr
+Password for 'https://marcilr@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/marcilr/foo.git/' not found
+foo$ 
+
+What's up?
+
+
+Create repo via https
+=====================
+1. In the upper-right corner of any page, click +, and then
+click New repository.
+
+2. Create a short, memorable name for your repository.
+For example, "hello-world".
+
+3. Optionally, add a description of your repository.
+For example, "My first repository on GitHub."
+
+4. Choose between creating a public or private repository.
+> Public repositories are a great choice for getting started!
+They're visible to any user on GitHub, so you can benefit from a collaborative
+community.
+
+> Private repositories require a little more setup.  They're only available to
+you, the repository owner, as well as any collaborators you choose to share
+with.  Private repositories are only available for paid accounts.  For more
+information, see "What plan should I choose?."[1]
+
+5. Select Initialize this repository with a README.
+
+6. Click Create repository.
+
+Congratulations! You've successfully created your first repository,
+and initialized it with a README file.
+
+help.github.com/articles/create-a-repo/
+
+
+Links
+=====
+[1] What plan should I choose?
+https://help.github.com/articles/what-plan-should-i-choose
+
+Adding an existing project to GitHub using the command line
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+Adding a remote
+Create new repo on GitHub
+https://help.github.com/articles/adding-a-remote/
+
+Create A Repo
+To put your project up on GitHub, you'll need a repository for it to live in.
+Let's create one!
+Has https repo creation instructions
+https://help.github.com/articles/create-a-repo/
+
+Create a Github Repo from the Command Line
+EXTEND // JAN 29, 2014
+$ curl -u "$username:$token" https://api.github.com/user/repos -d '{"name":"'$repo_name'"}'
+https://viget.com/extend/create-a-github-repo-from-the-command-line
+
+Create new repository on github
+https://github.com/new
+
+"Working with Remotes" from the Pro Git book
+http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
