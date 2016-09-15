@@ -1,0 +1,85 @@
+links.txt
+Created Tue Nov 10 11:20:16 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+GitHub related links
+
+
+Links
+=====
+Adding an existing project to GitHub using the command line
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+Create a Github Repo from the Command Line
+https://viget.com/extend/create-a-github-repo-from-the-command-line
+
+Create a new repository
+This links to creating a new marcilr repo.
+https://github.com/new
+
+Create repositories
+Repositories are where you'll work
+and collaborate on projects
+https://help.github.com/create-a-repo
+
+Fork repositories
+Forking creates a new, unique project from an existing one.
+https://help.github.com/fork-a-repo
+
+Generating SSH keys
+GitHub Help
+https://help.github.com/articles/generating-ssh-keys/
+
+Git Basics - Working with Remotes
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+Git Branching
+https://git-scm.com/book/en/v1/Git-Branching
+
+GitHub
+https://github.com/
+
+GitHub API v3 - Overview
+All API access is over HTTPS, and accessed from the https://api.github.com.
+All data is sent and received as JSON.
+https://developer.github.com/v3/
+
+GitHub API v3 - Repositories
+Repositories | GitHub Developer Guide
+i.    List your repositories
+ii.   List user repositories
+iii.  List organization repositories
+iv.   List all public repositories
+v.    Create
+vi.   Get
+vii.  Edit
+viii. List contributors
+ix.   List languages
+x.    List Teams
+xi.   List Tags
+xii.  Delete a Repository
+https://developer.github.com/v3/repos/
+
+GitHub For Beginners: Don't Get Scared, Get Started
+http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
+
+GitHub For Beginners: Commit, Push And Go
+Lauren Orsini,  OCT 2, 2013
+http://readwrite.com/2013/10/02/github-for-beginners-part-2
+
+GitHub security and SSH keys
+https://circleci.com/docs/github-security-ssh-keys
+
+Github Webhook
+Bind Github webhook events to Kanboard automatic actions.
+http://kanboard.net/plugin/github-webhook
+
+Set up Git
+A quick guide to help you get started with Git.
+https://help.github.com/set-up-git-redirect
+
+Work togethor
+Send pull requests, follow friends.
+Star and watch projects.
+https://help.github.com/be-social
