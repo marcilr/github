@@ -1,0 +1,80 @@
+clone.txt
+Created Tue Nov 10 11:30:23 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Clone
+
+
+To grab a complete copy of another user's repository, use git clone like this:
+
+
+Clone GitHub repo:
+$ https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+# Clones a repository to your computer
+
+NOTE: ".git" at the end of YOUR-REPOSITORY name is optional.
+
+
+When you run git clone, the following actions occur:
+> A new folder called repo is made
+> It is initialized as a Git repository
+> A remote named origin is created, pointing to the URL you cloned from
+> All of the repository's files and commits are downloaded there
+> The default branch (usually called master) is checked out
+
+For every branch foo in the remote repository, a corresponding remote-tracking
+branch refs/remotes/origin/foo is created in your local repository.  You can
+usually abbreviate such remote-tracking branch names to origin/foo.
+
+--github.com/articles/fetching-a-remote/
+
+
+Example
+=======
+covellite:~/git$ git clone https://github.com/marcilr/dev
+Cloning into 'dev'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+covellite:~/git$ 
+
+
+Example
+=======
+covellite:~/git$ git clone https://github.com/marcilr/git-github github
+Cloning into 'github'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+covellite:~/git$
+
+-- help.github.com/articles/cloning-a-repository/
+
+
+Example
+=======
+covellite:~/tmp$ git clone https://github.com/marcilr/git.git
+Cloning into 'git'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+covellite:~/tmp$
+
+
+Links
+=====
+Cloning a repository
+https://help.github.com/articles/cloning-a-repository/
+
+Fetching a remote
+> git clone
+> git fetch
+> git merge
+> git pull
+https://help.github.com/articles/fetching-a-remote/
+
+Importing a Git repository using the command line
+https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
+

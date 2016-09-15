@@ -1,0 +1,115 @@
+github-from-cli.txt
+Created Fri Sep  9 13:42:49 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+
+Using github from the CLI
+
+git hub lets you use your github account from the command line.  Among other
+things, it lets you create and fork repositories, or file pull requests.
+
+--cyberciti.biz/
+
+
+Basic Usage
+===========
+The first time you use git hub, it will ask you for your github username and
+password.  It then requests (and stores) an API authentication token, so you
+can always revoke access from your profile page.
+
+The authentication token is stored in ~/.githubconfig.  Never share this token
+with anyone as it gives full access to your github account.
+
+git hub whoami
+--------------
+Tells you what github thinks about who you are:
+
+$ git hub whoami
+Raymond Marcil
+Profile   https://github.com/marcilr
+Email     marcilr@gmail.com
+Location  Anchorage, Alaska
+Repos     92 public, 0 private
+Gists     0 public, 0 private
+RSA key   ...NjrwmfaQ== (rsa4096_github_nopassphrase.pub)
+DSS key   ...k7V9iN0dE= (GitHub)
+$
+
+
+git hub status
+--------------
+Shows the last few GitHub status messages:
+
+~/git/dev/lang$ git hub status
+2016-09-02 12:31 good  Everything operating normally.
+2016-09-12 10:41 good  Current status: good
+~/git/dev/lang$
+
+
+git hub whois
+--------------
+If you want to see this information about other users, use git hub whois:
+$ git hub whois marcilr
+Raymond Marcil
+Profile   https://github.com/marcilr
+Email     marcilr@gmail.com
+Location  Anchorage, Alaska
+Repos     92 public, 0 private
+Gists     0 public, 0 private
+RSA key   ...NjrwmfaQ== (rsa4096_github_nopassphrase.pub)
+DSS key   ...k7V9iN0dE= (GitHub)
+$ 
+
+
+git hub repos [--no-forks] [<user>...]
+--------------------------------------
+List all repositories owned by a user, by default you.
+Specify --no-forks to exclude forked repositories.
+
+
+git hub add-public-keys [<key>...]
+----------------------------------
+Add SSH public keys (default: ~/.ssh/*.pub) to your account.
+
+
+git hub public-keys <user>
+--------------------------
+Display all public keys of a user, in a format that can be
+added to ~/.authorized_keys.
+
+
+git hub log [--type=<type>] [<what>]
+------------------------------------
+Displays a log of your github actions, such as pushes and
+issue comments. You can also specify a user or repository
+and the relevant log will be shown instead of yours.
+
+
+If you are only interested in events of a specific type, you can filter for
+it, e.g. --type=push.
+
+
+Interacting with repositories
+=============================
+...
+
+
+
+NOTE: Unless otherwise noted all documentation above is from pythonhosted.org/
+
+
+
+
+Links
+=====
+Caching your GitHub password in Git
+$ git config --global credential.helper cache
+https://help.github.com/articles/caching-your-github-password-in-git/
+
+Using github from the CLI
+git hub lets you use your github account from the command line.
+Among other things, it lets you create and fork repositories,
+or file pull requests.
+# pip install hub
+http://pythonhosted.org/hub/#using-github-from-the-cli

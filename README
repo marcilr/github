@@ -1,0 +1,84 @@
+README
+Created Tue Nov 10 11:24:45 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+cache-password.txt
+  Cache password for git
+
+  With git 1.7.9 or later, you can just use one of the following credential
+  helpers:
+
+  git config --global credential.helper cache
+  ... which tells git to keep your password cached in memory for (by default)
+  15 minutes. You can set a longer timeout with:
+
+  git config --global credential.helper "cache --timeout=3600"
+  http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github
+
+check-key-length.txt
+  Check key length:
+  $ ssh-keygen -l -f ~/.ssh/your_key.pub
+  https://news.ycombinator.com/item?id=9645703
+
+clone.txt
+  Clone - To grab a complete copy of another user's repository,
+  use git clone like this:
+  $ git clone https://github.com/USERNAME/REPOSITORY.git
+  # Clones a repository to your computer
+
+create.txt
+  Create a new repository on the command line
+
+curl.txt
+  Query github via curl.
+
+fetch.txt
+  Fetch - Use git fetch to retrieve new work done by other people.
+  You can grab all the new information by using git fetch
+  *remotename* in the terminal:
+  $ git fetch remotename
+  # Fetches updates made to a remote repository
+
+generating-ssh-keys.txt
+  Generating SSH keys
+
+github-from-cli.txt
+  Query github via cli
+
+github-from-cli-INSTALL.txt
+  Installation of github from the CLI
+
+links.txt
+  Syntax related links
+
+merge.txt
+  Merge - Merging combines your local changes with changes made by others.
+  Merge a remote-tracking branch with your local branch:
+  $ git merge remotename/branchname
+  # Merges updates made online with your local work
+
+pull.txt
+  git pull is a convenient shortcut for completing both git fetch and git
+  mergein the same command:
+    $ git pull remotename branchname
+    # Grabs online updates and merges them with your local work
+
+push.txt
+  Push an existing repository from the command line
+
+rename.txt
+  Rename repository
+  1. On GitHub, navigate to the main page of the repository.
+  2. Under your repository name, click Settings.
+  3. Under the Repository Name heading, type the new name of your repository.
+  4. Click Rename.  You're done!
+  https://help.github.com/articles/renaming-a-repository/
+
+ssh.txt
+  Generating SSH keys
+
+syntax.txt
+  Syntax

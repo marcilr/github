@@ -1,0 +1,34 @@
+pull.txt
+Created Tue Nov 10 11:44:35 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Pull
+
+
+git pull is a convenient shortcut for completing both git fetch and git
+mergein the same command:
+
+  $ git pull remotename branchname
+  # Grabs online updates and merges them with your local work
+
+Because pull performs a merge on the retrieved changes, you should ensure that
+your local work is committed before running the pull command.  If you run into
+a merge conflict[1] you cannot resolve, or if you decide to quit the merge,
+you can use git merge --abort to take the branch back to where it was in before
+you pulled.
+
+--github.com/articles/fetching-a-remote/
+
+
+Links
+=====
+[1] merge conflict
+https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line
+
+Fetching a remote
+> git clone
+> git fetch
+> git merge
+> git pull 
+https://help.github.com/articles/fetching-a-remote/

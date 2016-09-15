@@ -1,0 +1,39 @@
+fetch.txt
+Created Tue Nov 10 11:35:55 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Fetch
+
+
+Use git fetch to retrieve new work done by other people.  Fetching from a
+repository grabs all the new remote-tracking branches and tags without merging
+those changes into your own branches.
+
+If you already have a local repository with a remote URL[1] set up for the
+desired project, you can grab all the new information by using git fetch
+*remotename* in the terminal:
+
+  $ git fetch remotename
+  # Fetches updates made to a remote repository
+
+Otherwise, you can always add a new remote[2] and then fetch.
+
+--github.com/articles/fetching-a-remote/
+
+
+Links
+=====
+[1] with a remote URL
+https://help.github.com/articles/adding-a-remote
+
+[2] add a new remote
+https://help.github.com/articles/adding-a-remote
+
+Fetching a remote
+> git clone
+> git fetch
+> git merge
+> git pull 
+https://help.github.com/articles/fetching-a-remote/
+

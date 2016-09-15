@@ -1,0 +1,28 @@
+check-key-length.txt
+Created Wed Sep 23 08:44:07 AKDT 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Check key length:
+
+$ ssh-keygen -l -f ~/.ssh/your_key.pub
+
+news.ycombinator.com/item?id=9645703
+
+
+Example
+=======
+covellite:~$ ssh-keygen -l -f ~/.ssh/rsa16384_openssh.pub 
+16384 bc:77:71:9d:f1:c3:17:5c:38:45:eb:37:86:12:2c:d8 \
+/home/marcilr/.ssh/rsa16384_openssh.pub (RSA)
+covellite:~$ 
+
+NOTE: This also diplays the key's fingerprint.
+
+
+Links
+=====
+Auditing GitHub users - SSH key quality (benjojo.co.uk)
+490 points by benjojo12 113 days ago | 177 comments
+Hacker News
+https://news.ycombinator.com/item?id=9645703

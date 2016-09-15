@@ -1,0 +1,72 @@
+links.txt
+Created Wed Sep 23 08:49:35 AKDT 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Syntax related links
+
+
+Links
+=====
+Adding a remote
+https://help.github.com/articles/adding-a-remote
+
+Adding an existing project to GitHub using the command line
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+An introduction to curl using GitHub's API
+https://gist.github.com/caspyin/2288960
+
+Cloning the repo and working with Git
+MelvMay-GG edited this page on Mar 1, 2013 - 3 revisions
+https://github.com/GarageGames/Torque2D/wiki/Cloning-the-repo-and-working-with-Git
+
+Fetching a remote
+> git clone
+> git fetch
+> git merge
+> git pull 
+https://help.github.com/articles/fetching-a-remote/
+
+Generating SSH keys
+GitHub Help
+https://help.github.com/articles/generating-ssh-keys/
+
+Getting Started
+Developer API
+https://developer.github.com/guides/getting-started/
+
+GitHub Bootcamp
+Has links to:
+o Set up Git
+o Create repositories
+o Fork repositories
+o Work together
+https://github.com/
+
+GitHub Gist
+Gist is a simple way to share snippets and pastes with others.
+All gists are Git repositories, so they are automatically versioned,
+forkable and usable from Git.
+https://gist.github.com/discover
+
+Importing a Git repository using the command line
+GitHub Help
+https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
+
+Linux: Install pip Client To Install Python Packages
+by VIVEK GITE on OCTOBER 28, 2012 last updated OCTOBER 28, 2012
+nixCraft
+Linux and Unix tutorials for new and seasoned sysadmin.
+http://www.cyberciti.biz/faq/debian-ubuntu-centos-rhel-linux-install-pipclient/
+
+Resolving a merge conflict from the command line
+This guide demonstrates how to resolve some common conflicts via the command
+line. You will need a text editor to resolve some of the conflicts.
+https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+
+Using github from the CLI
+git hub lets you use your github account from the command line.  Among other things,
+it lets you create and fork repositories, or file pull requests.
+http://pythonhosted.org/hub/
+

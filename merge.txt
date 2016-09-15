@@ -1,0 +1,27 @@
+merge.txt
+Created Tue Nov 10 11:42:45 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Merge
+
+
+Merging combines your local changes with changes made by others.
+
+Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from
+a remote repository) with your local branch:
+
+  $ git merge remotename/branchname
+  # Merges updates made online with your local work
+
+--github.com/articles/fetching-a-remote/
+
+
+Links
+=====
+Fetching a remote
+> git clone
+> git fetch
+> git merge
+> git pull 
+https://help.github.com/articles/fetching-a-remote/

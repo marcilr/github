@@ -1,0 +1,58 @@
+push.txt
+Created Tue Nov 10 11:26:54 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Push an existing repository from the command line
+
+  $ git remote add origin git@github.com:marcilr/git.git
+  $ git push -u origin master
+
+  --github.com/marcilr/git
+
+
+Pushing to Your Remotes
+=======================
+When you have your project at a point that you want to share, you have to push
+it upstream.  The command for this is simple: git push [remote-name]
+[branch-name].  If you want to push your master branch to your origin server
+(again, cloning generally sets up both of those names for you automatically),
+then you can run this to push any commits you've done back up to the server:
+
+  $ git push origin master
+
+This command works only if you cloned from a server to which you have write
+access and if nobody has pushed in the meantime.  If you and someone else
+clone at the same time and they push upstream and then you push upstream, your
+push will rightly be rejected.  You'll have to pull down their work first and
+incorporate it into yours before you'll be allowed to push.
+
+  -- git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+
+Example
+=======
+Push go repo to github.
+
+1. Create git-dev-lang-go of github
+
+2. In home go repository at github repo as remote:
+$ git remote add origin git@github.com:marcilr/git-dev-lang-go.git
+
+3. List remotes:
+go$ git remote -v
+origin  git@github.com:marcilr/git-dev-lang-go.git (fetch)
+origin  git@github.com:marcilr/git-dev-lang-go.git (push)
+go$ 
+
+4. Push go repo to github:
+$ git push -u origin master
+
+
+Links
+=====
+Git Basics - Working with Remotes
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+git repo
+https://github.com/marcilr/git
