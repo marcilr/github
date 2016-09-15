@@ -30,8 +30,8 @@ incorporate it into yours before you'll be allowed to push.
   -- git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
 
-Example
-=======
+Example 1
+=========
 Push go repo to github.
 
 1. Create git-dev-lang-go of github
@@ -47,6 +47,71 @@ go$
 
 4. Push go repo to github:
 $ git push -u origin master
+
+
+Example 2
+=========
+Push merged guthub repo to github.
+
+1. Create new github github repo:
+$ github-repo-create github
+
+2. Added newly create github repo as remote:
+$ git remote add origin https://github.com/marcilr/github
+
+3. Inspect remotes of newly merged local github repo:
+github$ git remote -v
+origin  https://github.com/marcilr/github (fetch)
+origin  https://github.com/marcilr/github (push)
+revision-control-github ssh://git@github.com/marcilr/revision-control-github (fetch)
+revision-control-github ssh://git@github.com/marcilr/revision-control-github (push)
+revision-control-github-00INSTALL       ssh://git@github.com/marcilr/revision-control-github-00INSTALL (fetch)
+revision-control-github-00INSTALL       ssh://git@github.com/marcilr/revision-control-github-00INSTALL (push)
+revision-control-github-remotes ssh://git@github.com/marcilr/revision-control-github-remotes (fetch)
+revision-control-github-remotes ssh://git@github.com/marcilr/revision-control-github-remotes (push)
+revision-control-github-syntax  ssh://git@github.com/marcilr/revision-control-github-syntax (fetch)
+revision-control-github-syntax  ssh://git@github.com/marcilr/revision-control-github-syntax (push)
+revision-control-github-syntax-cli      ssh://git@github.com/marcilr/revision-control-github-syntax-cli (fetch)
+revision-control-github-syntax-cli      ssh://git@github.com/marcilr/revision-control-github-syntax-cli (push)
+revision-control-github-test    ssh://git@github.com/marcilr/revision-control-github-test (fetch)
+revision-control-github-test    ssh://git@github.com/marcilr/revision-control-github-test (push)
+syntax  https://github.com/marcilr/github-remotes-syntax (fetch)
+syntax  https://github.com/marcilr/github-remotes-syntax (push)
+github$
+
+The above remotes are not needed remove them:
+github$ git remote rm revision-control-github-00INSTALL
+github$ git remote rm revision-control-github
+github$ git remote rm revision-control-github-remotes
+github$ git remote rm revision-control-github-syntax
+github$ git remote rm revision-control-github-syntax-cli
+github$ git remote rm revision-control-github-test
+github$ git remote rm syntax
+
+
+github$ git remote -v
+origin  https://github.com/marcilr/github (fetch)
+origin  https://github.com/marcilr/github (push)
+github$
+
+Looks good.
+
+Pushed merged repo to github:
+$ git push -u origin master
+Username for 'https://github.com': marcilr
+Password for 'https://marcilr@github.com': 
+Counting objects: 254, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (187/187), done.
+Writing objects: 100% (254/254), 49.67 KiB | 0 bytes/s, done.
+Total 254 (delta 96), reused 118 (delta 58)
+remote: Resolving deltas: 100% (96/96), done.
+To https://github.com/marcilr/github
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+github$
+
+Done deal.
 
 
 Links
