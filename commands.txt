@@ -1,0 +1,37 @@
+commands.txt
+Created Thu Jan 28 14:26:35 AKST 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Commands displayed from creation of the GitHub git-software-daemons repo.
+
+
+Quick setup - if you've done this kind of thing before
+  HTTPS: https://github.com/marcilr/git-software-daemons.git
+  SSH:   git@github.com:marcilr/git-software-daemons.git
+
+...or create a new repository on the command line
+  HTTPS:
+    echo "# git-software-daemons" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/marcilr/git-software-daemons.git
+    git push -u origin master
+
+  SSH:
+    echo "# git-software-daemons" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin git@github.com:marcilr/git-software-daemons.git
+    git push -u origin master
+
+...or push an existing repository from the command line
+  HTTPS:
+    git remote add origin https://github.com/marcilr/git-software-daemons.git
+    git push -u origin master
+
+  SSH:
+    git remote add origin git@github.com:marcilr/git-software-daemons.git
+    git push -u origin master
