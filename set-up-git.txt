@@ -1,0 +1,41 @@
+set-up-git.txt
+Created Wed Sep 23 10:33:15 AKDT 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Set up Git
+
+
+1. Download and install the latest version of Git.
+On GCI Network Services, OSS covellite workstation installed 
+git - fast, scalable, distributed revision control system package:
+
+# aptitude install git
+
+This installed git v2.1.4:
+covellite:~$ git --version
+git version 2.1.4
+covellite:~$
+
+2. On your computer, open the Terminal application.
+$ aterm
+
+3. Tell Git your name so your commits will be properly labeled.  Type
+everything after the $ here:
+
+$ git config --global user.name "Raymond Marcil"
+
+4. Tell Git the email address that will be associated with your Git commits.
+The email you specify should be the same one found in your email settings.
+To keep your email address hidden, see "Keeping your email address private".
+
+$ git config --global user.email "marcilr@gmail.com"
+
+
+
+Links
+=====
+Set up Git
+A quick guide to help you get started with Git.
+Configure user.name and user.email
+https://help.github.com/articles/set-up-git/
