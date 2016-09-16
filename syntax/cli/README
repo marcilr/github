@@ -8,3 +8,10 @@ Filelist
 create.txt
   Create new repository on github via cli
   https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+github-from-cli.txt
+  Query github via cli
+
+github-from-cli-INSTALL.txt
+  Installation of github from the CLI
+
