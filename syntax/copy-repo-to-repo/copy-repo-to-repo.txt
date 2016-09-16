@@ -1,0 +1,117 @@
+copy-repo-to-repo.txt
+Created Tue Aug 16 13:23:09 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Copy file(s) repo to repo with history
+
+
+This needs analysis.  Think there is a method here to copy files repo to
+repo.
+
+
+Our Git repositories started out as parts of a single monster SVN repository
+where the individual projects each had their own tree like so:
+
+project1/branches
+        /tags
+        /trunk
+project2/branches
+        /tags
+        /trunk
+
+Obviously, it was pretty easy to move files from one to another with svn mv.
+But in Git, each project is in its own repository, and today I was asked to
+move a subdirectory from project2 to project1.  I did something like this:
+
+$ git clone project2 
+$ cd project2
+$ git filter-branch --subdirectory-filter \
+deeply/buried/java/source/directory/A -- --all
+$ git remote rm origin  # so I don't accidentally the repo ;-)
+$ mkdir -p deeply/buried/different/java/source/directory/B
+$ for f in *.java; do 
+>  git mv $f deeply/buried/different/java/source/directory/B
+>  done
+$ git commit -m "moved files to new subdirectory"
+$ cd ..
+$
+$ git clone project1
+$ cd project1
+$ git remote add p2 ../project2
+$ git fetch p2
+$ git branch p2 remotes/p2/master
+$ git merge p2 # --allow-unrelated-histories for git 2.9
+$ git remote rm p2
+$ git push
+
+But that seems pretty convoluted.  Is there a better way to do this sort of
+thing in general?  Or have I adopted the right approach?
+
+edited Jun 23 at 20:21 - Scott Berrevoets
+http://stackoverflow.com/users/751268/scott-berrevoets
+
+asked Sep 2 '09 at 2:04 - ebneter
+http://stackoverflow.com/users/150032/ebneter
+
+-----------------------------------------------------------------------------
+
+Yep, hitting on the --subdirectory-filter of filter-branch was key.  The fact
+that you used it essentially proves there's no easier way - you had no choice
+but to rewrite history, since you wanted to end up with only a (renamed)
+subset of the files, and this by definition changes the hashes.  Since none of
+the standard commands (e.g. pull) rewrite history, there's no way you could
+use them to accomplish this.
+
+You could refine the details, of course - some of your cloning and branching
+wasn't strictly necessary - but the overall approach is good!  It's a shame
+it's complicated, but of course, the point of git isn't to make it easy to
+rewrite history.
+
+edited Oct 10 '15 at 8:11 - StackzOfZtuff
+http://stackoverflow.com/users/4247268/stackzofztuff
+
+answered Sep 2 '09 at 5:38 - Jefromi
+http://stackoverflow.com/users/119963/jefromi
+
+-----------------------------------------------------------------------------
+
+If your history is sane, you can take the commits out as patch and apply them
+in the new repository:
+
+    cd repository
+    git log --pretty=email --patch-with-stat --reverse --full-index \
+    --binary -- path/to/file_or_folder > patch
+    cd ../another_repository
+    git am < ../repository/patch 
+
+Or in one line
+
+    git log --pretty=email --patch-with-stat --reverse \
+    -- path/to/file_or_folder | (cd /path/to/new_repository && git am)
+
+edited Mar 6 '14 at 8:28 - gregers
+http://stackoverflow.com/users/44643/gregers
+
+answered Jul 11 '12 at 5:44 - Smar
+http://stackoverflow.com/users/345959/smar
+
+NOTE: This latter method does not seem to work (August 16, 2016)
+
+--http://stackoverflow.com/questions/1365541/how-to-move-files-from-one-git-repo-to-another-not-a-clone-preserving-history
+
+
+Links
+=====
+Git Basics - Working with Remotes
+git remote add <shortname> <url>
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+How to extract one file with commit history from a git repo with index-filter
+& co
+Looks useful
+http://stackoverflow.com/questions/7375528/how-to-extract-one-file-with-commit-history-from-a-git-repo-with-index-filter
+
+How to move files from one git repo to another (not a clone), preserving
+history
+http://stackoverflow.com/questions/1365541/how-to-move-files-from-one-git-repo-to-another-not-a-clone-preserving-history
