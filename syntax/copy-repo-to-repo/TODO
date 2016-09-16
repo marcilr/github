@@ -1,0 +1,19 @@
+TODO
+Created Thu Aug 18 07:59:51 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
++++ Thu Aug 18 07:59:51 AKDT 2016 - Need to create script to merge 
+two repositories into one.
+
+See:
+  Merging Two Git Repositories                      <===
+  Into One Repository Without Losing File History
+  saintgimp - January 22, 2013
+  This is the longer article on this
+  https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/
+
+  Merge two Git repositories without breaking file history
+  For merging two entire repos this looks like solid insgtructions
+  Short article
+  http://stackoverflow.com/questions/13040958/merge-two-git-repositories-without-breaking-file-history/
