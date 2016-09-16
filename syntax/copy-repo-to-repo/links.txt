@@ -1,0 +1,40 @@
+links.txt
+Created Wed Aug 17 13:54:18 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Git copy repo to repo related links
+
+
+Links
+=====
+Building a wireless temperature sensor network, Part 1
+Part 1: Requirements and general design
+saintgimp - July 10, 2016
+https://saintgimp.org/2016/07/10/building-a-wireless-temperature-sensor-network-part-1/
+
+Building a wireless temperature sensor network, Part 2
+Part 2: Sensor module hardware
+saintgimp - July 11, 2016
+https://saintgimp.org/2016/07/11/building-a-wireless-temperature-sensor-network-part-2/
+
+Building a wireless temperature sensor network, Part 3
+Part 3: Sensor modules software
+saintgimp - July 18, 2016
+https://saintgimp.org/author/saintgimp/
+
+Eric Lee (SaintGimp)
+GitHub site
+Great site and projects, see above
+https://github.com/SaintGimp
+
+Merging Two Git Repositories                      <===
+Into One Repository Without Losing File History
+saintgimp - January 22, 2013
+This is the longer article on this
+https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/
+
+Merge two Git repositories without breaking file history
+For merging two entire repos this looks like solid insgtructions
+Short article
+http://stackoverflow.com/questions/13040958/merge-two-git-repositories-without-breaking-file-history/
