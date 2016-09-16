@@ -1,0 +1,166 @@
+curl.txt
+Created Thu Aug 18 15:43:52 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Using curl to access GitHub
+
+
+List repositories
+=================
+Definitely get full list of repos using OAuth personal access token:
+
+$ curl -i -H 'Authorization: token <my big token here>' \
+https://api.github.com/users/marcilr/repos | wc -l
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  165k  100  165k    0     0   172k      0 --:--:-- --:--:-- --:--:--  172k
+2819
+marcilr@covellite:~/git/syntax/copy-repo-to-repo$
+
+NOTE: Still only getting about 30 repos listed.
+
+
+$ curl -i https://api.github.com/users/marcilr/repos | grep html_url
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0      "html_url": "https://github.com/marcilr",
+    "html_url": "https://github.com/marcilr/.repo",
+      "html_url": "https://github.com/marcilr",
+    "html_url": "https://github.com/marcilr/foo",
+      "html_url": "https://github.com/marcilr",
+    "html_url": "https://github.com/marcilr/git-bin",
+      "html_url": "https://github.com/marcilr",
+...
+    "html_url": "https://github.com/marcilr/git-dev-lang-go-packages",
+      "html_url": "https://github.com/marcilr",
+    "html_url": "https://github.com/marcilr/git-dev-lang-go-packages-bufio",
+100  162k  100  162k    0     0   104k      0  0:00:01  0:00:01 --:--:--  104k
+$ 
+
+Could obviously git a list of github repositories using curl.
+The output definitely needs a bit of filtering.
+Also, definitely a limited number of results.  Likely need to be
+logged in to get full list.
+
+
+$ curl -i https://api.github.com/users/marcilr/repos
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Thu, 18 Aug 2016 23:57:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 166525
+Status: 200 OK
+X-RateLimit-Limit: 60
+...
+X-GitHub-Request-Id: D1A58601:3C94:2F5B791:57B64B86
+
+
+[
+  {
+    "id": 46310841,
+    "name": ".repo",
+    "full_name": "marcilr/.repo",
+    "owner": {
+      "login": "marcilr",
+      "id": 12204051,
+       ...
+      "url": "https://api.github.com/users/marcilr",
+      "html_url": "https://github.com/marcilr",
+       ...
+    },
+    "private": false,
+    "html_url": "https://github.com/marcilr/.repo",
+    "description": "",
+    "fork": false,
+    "url": "https://api.github.com/repos/marcilr/.repo",
+    ...
+  },
+  {
+    "id": 43032675,
+    "name": "foo",
+    "full_name": "marcilr/foo",
+    "owner": {
+      "login": "marcilr",
+      "id": 12204051,
+  ...
+  },
+
+
+Get some philosophy:
+
+$ curl https://api.github.com/zen
+Mind your words, they are important.
+$ 
+
+$ curl https://api.github.com/users/marcilr
+{
+  "login": "marcilr",
+  "id": 12204051,
+  "avatar_url": "https://avatars.githubusercontent.com/u/12204051?v=3",
+...
+  "created_at": "2015-05-01T22:14:23Z",
+  "updated_at": "2016-08-17T22:06:49Z"
+}
+$
+
+aAdd the -i flag to include headers:
+$ curl -i https://api.github.com/zen
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Thu, 18 Aug 2016 23:47:07 GMT
+...
+X-GitHub-Request-Id: D1A58601:3C94:2F421A7:57B648E4
+
+Avoid administrative distraction.
+$
+
+
+$ curl -i -u marcilr https://api.github.com/marcilr
+Enter host password for user 'marcilr': ***
+HTTP/1.1 401 Unauthorized
+Server: GitHub.com
+...
+X-GitHub-Request-Id: D1A58601:3C94:2F4A0A2:57B649C0
+
+{
+  "message": "Not Found",
+  "documentation_url": "https://developer.github.com/v3"
+}
+$
+
+
+Looks like I should configure OAuth authentication.
+
+
+
+
+
+Links
+=====
+A curl tutorial using GitHub's API - GitHub
+https://gist.github.com/caspyin/2288960
+
+Getting Started
+GitHub Developer API
+https://developer.github.com/guides/getting-started/
+
+Github API v3 doesn't show all user repositories
+Need to use pagination to get full list of repositories.
+Great details here:
+  curl -i https://api.github.com/users/KiCad/repos?per_page=100
+  https://api.github.com/users/KiCad/repos?per_page=100&page=2
+  curl -i https://api.github.com/users/KiCad/repos?per_page=100&page=2
+You'll get repos 101-200. You can continue this until there is no next
+link in the Links header or until you realize you've received fewer
+than 100 results.
+Dec 8 '14 at 15:09 - jasonrudolph
+http://stackoverflow.com/users/929066/jasonrudolph
+answered Dec 7 '14 at 14:01 - sigmavirus24
+http://stackoverflow.com/users/1953283/sigmavirus24
+
+This answer is great, and here's a link to the relevant documenation
+on pagination for more details developer.github.com/v3/#pagination - Brendan Forster
+http://stackoverflow.com/users/1363815/brendan-forster
+
+http://stackoverflow.com/questions/27331849/github-api-v3-doesnt-show-all-user-repositories
