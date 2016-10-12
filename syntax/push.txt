@@ -35,6 +35,7 @@ Example 1
 Push go repo to github.
 
 1. Create git-dev-lang-go of github
+$ github-repo-create git-dev-lang-go.git
 
 2. In home go repository at github repo as remote:
 $ git remote add origin git@github.com:marcilr/git-dev-lang-go.git
