@@ -75,6 +75,10 @@ Github Webhook
 Bind Github webhook events to Kanboard automatic actions.
 http://kanboard.net/plugin/github-webhook
 
+Project showcases
+Browse interesting repositories, solving all types of interesting problems.
+https://github.com/explore
+
 Set up Git
 A quick guide to help you get started with Git.
 https://help.github.com/set-up-git-redirect
