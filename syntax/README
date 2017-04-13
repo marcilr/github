@@ -35,6 +35,10 @@ create.txt
 curl.txt
   Query github via curl.
 
+deploy-ssh-key-to-github.txt
+  Deploy ssh key to GitHub
+  https://developer.github.com/guides/managing-deploy-keys/
+
 fetch.txt
   Fetch - Use git fetch to retrieve new work done by other people.
   You can grab all the new information by using git fetch
