@@ -84,5 +84,8 @@ rename.txt
 ssh.txt
   Generating SSH keys
 
+sub-to-repo.txt
+  Splitting a subfolder out into a new repository
+
 syntax.txt
   Syntax
