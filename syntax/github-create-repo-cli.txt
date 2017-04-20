@@ -1,0 +1,149 @@
+github-create-repo-cli.txt
+Created Thu Apr 20 15:13:30 AKDT 2017
+by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Create github repo from command line
+
+
+CLI commands for github API v3 (replace all CAPS keywords):
+  $ curl -u 'USER' https://api.github.com/user/repos -d '{ "name":"REPO" }'
+
+  # Remember replace USER with your username and REPO with your
+  # repository/application name!
+
+  $ git remote add origin git@github.com:USER/REPO.git
+  $ git push origin master
+
+edited Sep 2 '13 at 21:07
+Michael Durrant
+
+answered Apr 25 '12 at 23:38
+bennedich
+
+The slight problem with first command is that you are leaving
+your GitHub password in your ~/.bash_history.  I would suggest
+replace -u 'USER:PASS' with -u 'USER', then curl will ask you
+for password interactively. – ivanzoid Dec 1 '12 at 14:31
+
+Here's how to add it as a git alias: git config \
+--global alias.gh-create '!sh -c "curl \
+-u \"USERNAME\" https://api.github.com/user/repos \
+-d \"{\\\"name\\\":\\\"$1\\\"}\"" -' – Robin Winslow Jun 7 '13 at 15:53
+
+
+
+Example
+=======
+Create new 'gnome' GitHub repo (created April 20, 2017):
+
+$ curl -u 'marcilr' https://api.github.com/user/repos -d '{ "name": "gnome" }'
+Enter host password for user 'marcilr':
+{
+  "id": 88914129,
+  "name": "gnome",
+  "full_name": "marcilr/gnome",
+  "owner": {
+    "login": "marcilr",
+    "id": 12204051,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/12204051?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/marcilr",
+    "html_url": "https://github.com/marcilr",
+    "followers_url": "https://api.github.com/users/marcilr/followers",
+    "following_url": "https://api.github.com/users/marcilr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/marcilr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/marcilr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/marcilr/subscriptions",
+    "organizations_url": "https://api.github.com/users/marcilr/orgs",
+    "repos_url": "https://api.github.com/users/marcilr/repos",
+    "events_url": "https://api.github.com/users/marcilr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/marcilr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "private": false,
+  "html_url": "https://github.com/marcilr/gnome",
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/marcilr/gnome",
+  "forks_url": "https://api.github.com/repos/marcilr/gnome/forks",
+  "keys_url": "https://api.github.com/repos/marcilr/gnome/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/marcilr/gnome/collaborators{/collaborator}",
+  "teams_url": "https://api.github.com/repos/marcilr/gnome/teams",
+  "hooks_url": "https://api.github.com/repos/marcilr/gnome/hooks",
+  "issue_events_url": "https://api.github.com/repos/marcilr/gnome/issues/events{/number}",
+  "events_url": "https://api.github.com/repos/marcilr/gnome/events",
+  "assignees_url": "https://api.github.com/repos/marcilr/gnome/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/marcilr/gnome/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/marcilr/gnome/tags",
+  "blobs_url": "https://api.github.com/repos/marcilr/gnome/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/marcilr/gnome/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/marcilr/gnome/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/marcilr/gnome/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/marcilr/gnome/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/marcilr/gnome/languages",
+  "stargazers_url": "https://api.github.com/repos/marcilr/gnome/stargazers",
+  "contributors_url": "https://api.github.com/repos/marcilr/gnome/contributors",
+  "subscribers_url": "https://api.github.com/repos/marcilr/gnome/subscribers",
+  "subscription_url": "https://api.github.com/repos/marcilr/gnome/subscription",
+  "commits_url": "https://api.github.com/repos/marcilr/gnome/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/marcilr/gnome/git/commits{/sha}",
+  "comments_url": "https://api.github.com/repos/marcilr/gnome/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/marcilr/gnome/issues/comments{/number}",
+  "contents_url": "https://api.github.com/repos/marcilr/gnome/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/marcilr/gnome/compare/{base}...{head}",
+  "merges_url": "https://api.github.com/repos/marcilr/gnome/merges",
+  "archive_url": "https://api.github.com/repos/marcilr/gnome/{archive_format}{/ref}",
+  "downloads_url": "https://api.github.com/repos/marcilr/gnome/downloads",
+  "issues_url": "https://api.github.com/repos/marcilr/gnome/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/marcilr/gnome/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/marcilr/gnome/milestones{/number}",
+  "notifications_url": "https://api.github.com/repos/marcilr/gnome/notifications{?since,all,participating}",
+  "labels_url": "https://api.github.com/repos/marcilr/gnome/labels{/name}",
+  "releases_url": "https://api.github.com/repos/marcilr/gnome/releases{/id}",
+  "deployments_url": "https://api.github.com/repos/marcilr/gnome/deployments",
+  "created_at": "2017-04-20T22:00:03Z",
+  "updated_at": "2017-04-20T22:00:03Z",
+  "pushed_at": "2017-04-20T22:00:03Z",
+  "git_url": "git://github.com/marcilr/gnome.git",
+  "ssh_url": "git@github.com:marcilr/gnome.git",
+  "clone_url": "https://github.com/marcilr/gnome.git",
+  "svn_url": "https://github.com/marcilr/gnome",
+  "homepage": null,
+  "size": 0,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": null,
+  "has_issues": true,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "open_issues_count": 0,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "permissions": {
+    "admin": true,
+    "push": true,
+    "pull": true
+  },
+  "allow_squash_merge": true,
+  "allow_merge_commit": true,
+  "allow_rebase_merge": true,
+  "network_count": 0,
+  "subscribers_count": 1
+}
+$
+
+
+Links
+=====
+Is it possible to create a remote repo on GitHub
+from the CLI without opening browser?
+http://stackoverflow.com/questions/2423777/is-it-possible-to-create-a-remote-repo-on-github-from-the-cli-without-opening-br
+
