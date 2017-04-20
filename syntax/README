@@ -49,6 +49,9 @@ fetch.txt
 generating-ssh-keys.txt
   Generating SSH keys
 
+github-create-repo-cli.txt
+  Create github repo from command line
+
 github-from-cli.txt
   Query github via cli
 
