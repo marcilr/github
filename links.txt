@@ -38,6 +38,9 @@ Git Branching
 https://git-scm.com/book/en/v1/Git-Branching
 
 GitHub
+Build software better, together.
+Powerful collaboration, code review, and code management for open source
+and private projects. Need private repositories?
 https://github.com/
 
 GitHub API v3 - Overview
@@ -60,6 +63,9 @@ x.    List Teams
 xi.   List Tags
 xii.  Delete a Repository
 https://developer.github.com/v3/repos/
+
+GitHub Flavored Markdown
+https://help.github.com/articles/github-flavored-markdown/
 
 GitHub For Beginners: Don't Get Scared, Get Started
 http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
