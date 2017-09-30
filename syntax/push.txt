@@ -114,6 +114,45 @@ github$
 
 Done deal.
 
+Example 3
+=========
+Push hardware repo to github:
+
+1. Create hardware repo on github via web gui.
+
+2. List and remove existing origin:
+malachite:~/git/hardware$ git remote -v
+origin  ssh://htpc/data/git/hardware (fetch)
+origin  ssh://htpc/data/git/hardware (push)
+marcilr@malachite:~/git/hardware$ git remote rm origin
+marcilr@malachite:~/git/hardware$ 
+
+3. Add remote github hardware repo as remote:
+malachite:~/git/hardware$ git remote add origin https://github.com/marcilr/hardware
+
+marcilr@malachite:~/git/hardware$ git remote -v
+origin  https://github.com/marcilr/hardware (fetch)
+origin  https://github.com/marcilr/hardware (push)
+malachite:~/git/hardware$ 
+
+4. Push hardware repo to github:
+
+malachite:~/git/hardware$ git push -u origin master
+Username for 'https://github.com': *** 
+Password for 'https://***@github.com': 
+Counting objects: 772, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (371/371), done.
+Writing objects: 100% (772/772), 103.47 KiB | 0 bytes/s, done.
+Total 772 (delta 433), reused 704 (delta 391)
+remote: Resolving deltas: 100% (433/433), done.
+To https://github.com/marcilr/hardware
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+malachite:~/git/hardware$
+
+
+
 
 Links
 =====
