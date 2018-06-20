@@ -159,6 +159,82 @@ malachite:~/git/hardware$
 
 
 
+Example 3
+=========
+Create and push to new github chrome repo
+
+1. Create new github repo:
+covellite:~$ github-repo-create chrome
+debug() get-credentials() START
+debug() main: CREDENTIALS: /home/marcilr/.github
+debug() get-credentials() USER = marcilr
+debug() get-credentials() PASS = ***
+...
+  "subscribers_count": 1
+}
+debug() repos-loop() END
+covellite:~$
+
+2. On existing local chrome repository list current remotes:
+covellite:~/git/net/web/chrome$ git remote -v
+origin	ssh://htpc/data/git/net/web/chrome/chrome (fetch)
+origin	ssh://htpc/data/git/net/web/chrome/chrome (push)
+covellite:~/git/net/web/chrome$ 
+
+3. Remove remotes from current repository:
+covellite:~/git/net/web/chrome$ git remote rm origin
+
+covellite:~/git/net/web/chrome$ git remote -v
+covellite:~/git/net/web/chrome$ 
+
+4. Add new github chrome repo as remote:
+covellite:~/git/net/web/chrome$ git remote add origin \
+https://github.com/marcilr/chrome
+covellite:~/git/net/web/chrome$ 
+
+5. Push to github repository:
+covellite:~/git/net/web/chrome$ git push -u origin master
+Username for 'https://github.com': marcilr
+Password for 'https://marcilr@github.com': 
+Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (22/22), 3.33 KiB | 0 bytes/s, done.
+Total 22 (delta 6), reused 9 (delta 2)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/marcilr/chrome
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+covellite:~/git/net/web/chrome$ 
+
+6. Verify new populated githubv chrome repo:
+https://github.com/marcilr/chrome
+
+7. Remove local chrome repo:
+covellite:~/git/net/web$ rm -rf chrome/
+
+8. Updated manifest with:
+ssh://htpc/data/git/net/web/chrome/chrome   chrome
+
+  to:
+
+ssh://git@github.com/marcilr/chrome   chrome
+
+9. Pull down new repo:
+covellite:~/git/net/web$ resync
+
+  or
+
+covellite:~/git/net/web$ git clone ssh://git@github.com/marcilr/chrome   chrome
+
+10. Check checkout:
+covellite:~/git/net/web$ ls chrome/
+00INSTALL  chrome.txt  README  syntax
+covellite:~/git/net/web$
+
+Looks good!
+
+
 Links
 =====
 Git Basics - Working with Remotes
