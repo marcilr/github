@@ -11,6 +11,11 @@ Push an existing repository from the command line
   --github.com/marcilr/git
 
 
+  To remove current repo origin:
+  $ git remote rm origin
+
+
+
 Pushing to Your Remotes
 =======================
 When you have your project at a point that you want to share, you have to push
