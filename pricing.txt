@@ -1,0 +1,38 @@
+pricing.txt
+Created Thu Nov 29 09:52:08 AST 2018
+by Raymond E. Marcil <ray.marcil@alaska.gov>
+
+
+Pricing for github
+
+
+
+Looks like developer is the only viable 
+github plan fo me:
+
+Developer - $7/month
+o Personal account
+o Unlimited public repositories
+o Unlimited private repositories
+o Unlimited collaborators
+
+
+Team - $9 per user/month
+Unlimited public repositories
+Unlimited private repositories
+Team and user permissions
+Starting at $25 / month which includes your first 5 users.
+
+Business Cloud $21 per user / month
+SAML single sign-on
+Access provisioning
+24/5 support with 8-hour response time
+99.95% uptime SLA
+
+
+Links
+=====
+Plans for all workflows
+GitHub is free to use for public and open source projects.
+Work together across unlimited private repositories with a paid plan.
+https://github.com/pricing
