@@ -85,6 +85,9 @@ Hello World
 10 minute read
 https://guides.github.com/activities/hello-world/
 
+Organizations
+https://help.github.com/articles/collaborating-with-groups-in-organizations/
+
 Project showcases
 Browse interesting repositories, solving all types of interesting problems.
 https://github.com/explore
