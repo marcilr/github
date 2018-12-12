@@ -6,6 +6,32 @@ Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
 Github
 
 
+Make repo private
+=================
+Go to repo Settings
+
+1. At bottom see:
+  Make this repository private
+  Hide this repository from the public.
+
+click Make private (at bottom)
+
+2. At Make this repository private popup
+  Warning: this is a potentially destructive action.
+  You will permanently lose:
+  o All stars and watchers of this repository.
+  o All pages published from this repository.
+  Enter repo name: 'dnr'
+
+click I understand, make this repository private
+
+3. At Confirm password popup
+enter github pass
+
+click Confirm password
+
+
+
 Add project
 ===========
 Adding an existing project to GitHub using the command line
