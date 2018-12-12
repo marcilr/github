@@ -6,18 +6,55 @@ by Raymond E. Marcil <ray.marcil@alaska.gov>
 Pricing for github
 
 
+Wed, Dec 12, 2018  9:57:31 AM
+=============================
+Signed up for Developer plan:
+
+  Developer - $7/month ($84/Year
+  o Personal account
+  o Unlimited public repositories
+  o Unlimited private repositories
+  o Unlimited collaborators
+
+Goal being the Unlimited private repositories.
+
+At https://github.com/pricing under Developer $7 per month
+  click Upgrade your account
+
+At Upgrade your plan:
+  Raymond Marcil
+  Free plan, $0 / month
+
+Upgrading to:
+  Developer
+  Unlimited public repositories
+  Unlimited private repositories
+
+Upgrade summary
+  Pay monthly
+x Pay Yearly (12x $7 = $84 / year
+
+click Add a Payment Method
+  Added credit card 
+
+click Upgrade plan
+
+Initially paid for 1 month at $7 then updated to 1 year at $84.
+Update to 1 year at $84 has not cleared yet (10:14AM Wed Dec 12, 2018)
+    
+
+
 
 Thu Nov 29 09:52:08 AST 2018
 ============================
 Looks like developer is the only viable 
 github plan fo me:
 
-Developer - $7/month
+Developer - $7/month   <===
 o Personal account
 o Unlimited public repositories
 o Unlimited private repositories
 o Unlimited collaborators
-
 
 Team - $9 per user/month
 Unlimited public repositories
