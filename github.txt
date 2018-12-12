@@ -8,6 +8,10 @@ Github
 
 Make repo private
 =================
+Private repos:
+  dnr - Made private 12/12/18
+  tfs (Team Foundation Server) - Made private 12/12/18
+
 Go to repo Settings
 
 1. At bottom see:
@@ -29,7 +33,6 @@ click I understand, make this repository private
 enter github pass
 
 click Confirm password
-
 
 
 Add project
