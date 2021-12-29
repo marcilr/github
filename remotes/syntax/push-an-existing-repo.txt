@@ -1,0 +1,34 @@
+push-an-existing-repo.txt
+Created Tue 28 Dec 2021 05:50:59 PM AKST
+Copyright (C) 2021 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Some good syntax for pushing an existing git repository
+to github from the command line that I observed
+after creating the fresh marcilr/vehicle-crash-report
+repo on github online.
+
+Quick setup — if you’ve done this kind of thing before
+  or HTTPS SSH git@github.com:marcilr/vehicle-crash-report.git
+Get started by creating a new file or uploading an existing file. 
+We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# vehicle-crash-report" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:marcilr/vehicle-crash-report.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:marcilr/vehicle-crash-report.git
+git branch -M main
+git push -u origin main
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, 
+Mercurial, or TFS project.
+<Import code>   <=== button
+
