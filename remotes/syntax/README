@@ -21,6 +21,12 @@ list-remotes.txt
   List remotes
   $ git remote -v
 
+push-an-existing-repo.txt
+  Some good syntax for pushing an existing git repository
+  to github from the command line that I observed
+  after creating the fresh marcilr/vehicle-crash-report
+  repo on github online.
+
 TODO
   Items TODO
 
