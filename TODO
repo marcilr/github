@@ -3,6 +3,20 @@ Created Tue Nov 10 16:04:43 AKST 2015
 Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
 
 
++++ Thu 13 Jan 2022 10:11:32 AM AKST - Malachite's github is throwing 
+  an authentication error:
+
+$ git push
+Username for 'https://github.com': marcilr
+Password for 'https://marcilr@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/marcilr/bin/'
+$
+
+Need to determine how to configure a personal access token for github.
+
+
 +++ Wed Aug 16 08:00:21 AKDT 2017 - This page has great format.
   Need to update mine.
 
